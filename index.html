@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#090407"
+    >
+
+    <title>For You ❤️</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         BACKGROUND
+    =================================================== -->
+
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div id="stars"></div>
+    <div id="hearts"></div>
+    <div id="confetti"></div>
+
+
+    <!-- ==================================================
+         LOADING
+    =================================================== -->
+
+    <div id="loader">
+        <div class="loader-box">
+
+            <div class="loader-heart">
+                ♥
+            </div>
+
+            <p>
+                preparing something special...
+            </p>
+
+            <div class="loader-line">
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ==================================================
+         MUSIC
+    =================================================== -->
+
+    <audio
+        id="music"
+        src="music/lagu.mp3"
+        loop
+        preload="auto">
+    </audio>
+
+    <button
+        id="musicButton"
+        class="music-button"
+        type="button"
+        aria-label="Musik">
+
+        ♫
+
+    </button>
+
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main id="app">
+
+
+        <!-- =================================================
+             PAGE 1 — OPENING
+        ================================================== -->
+
+        <section
+            class="page active"
+            id="page1">
+
+            <div class="page-content center">
+
+                <div class="mini-title">
+                    A LITTLE SOMETHING
+                </div>
+
+                <h1 class="hero-title">
+
+                    <span>
+                        This is
+                    </span>
+
+                    <strong>
+                        for you.
+                    </strong>
+
+                </h1>
+
+                <p class="hero-text">
+
+                    Ada sesuatu yang udah lama
+                    pengen aku kasih ke kamu.
+
+                    <br>
+
+                    Mungkin sederhana,
+                    tapi aku bikin ini
+                    khusus buat kamu.
+
+                </p>
+
+                <button
+                    id="startButton"
+                    class="main-button"
+                    type="button">
+
+                    <span>
+                        Mulai
+                    </span>
+
+                    <b>→</b>
+
+                </button>
+
+                <div class="scroll-text">
+                    TAP TO BEGIN
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 2 — INTRO
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page2">
+
+            <div class="page-content center">
+
+                <div class="chapter">
+                    CHAPTER 01
+                </div>
+
+                <h2 class="section-title">
+
+                    Sebelum
+                    <em>semuanya...</em>
+
+                </h2>
+
+                <p class="section-text">
+
+                    aku cuma mau kamu tahu,
+                    ada seseorang yang cukup
+                    bersyukur karena pernah
+                    mengenal kamu.
+
+                    <br><br>
+
+                    Dan hari ini,
+                    aku pengen bikin
+                    sesuatu yang sedikit berbeda.
+
+                </p>
+
+                <button
+                    id="toEnvelope"
+                    class="text-button"
+                    type="button">
+
+                    Buka sesuatu
+                    <span>→</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 3 — ENVELOPE
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page3">
+
+            <div class="page-content center">
+
+                <div class="chapter">
+                    CHAPTER 02
+                </div>
+
+                <h2 class="section-title small-title">
+
+                    Ada surat
+                    <em>buat kamu.</em>
+
+                </h2>
+
+                <p class="section-text">
+
+                    Jangan buru-buru.
+                    Klik amplopnya.
+
+                </p>
+
+
+                <!-- ENVELOPE -->
+
+                <div
+                    id="envelope"
+                    class="envelope"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Buka surat">
+
+                    <div class="envelope-back"></div>
+
+                    <div class="letter-paper">
+
+                        <div class="paper-inner">
+
+                            <span>
+                                FOR YOU
+                            </span>
+
+                            <h3>
+                                Jesika
+                            </h3>
+
+                            <div>
+                                ♥
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-front"></div>
+
+                    <div class="seal">
+                        ♥
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="envelopeHint"
+                    class="envelope-hint">
+
+                    TAP THE ENVELOPE
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 4 — LETTER
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page4">
+
+            <div class="page-content">
+
+                <div class="letter">
+
+                    <div class="letter-header">
+
+                        <span>
+                            A LETTER FOR YOU
+                        </span>
+
+                        <span>
+                            ♥
+                        </span>
+
+                    </div>
+
+
+                    <div class="letter-content">
+
+                        <p class="greeting">
+                            Hai, Jesika.
+                        </p>
+
+                        <p>
+
+                            Selamat ulang tahun
+                            buat seseorang yang
+                            mungkin nggak sadar
+                            kalau dirinya punya
+                            arti yang cukup besar.
+
+                        </p>
+
+                        <p>
+
+                            aku nggak tahu apakah
+                            kata-kata aku bakal
+                            cukup buat menjelaskan
+                            semuanya.
+
+                            Tapi satu hal yang aku
+                            tahu...
+
+                        </p>
+
+                        <p class="highlight">
+
+                            aku berharap hari ini
+                            jadi salah satu hari
+                            yang paling indah
+                            buat kamu.
+
+                        </p>
+
+                        <p>
+
+                            Semoga semua hal baik
+                            yang kamu tunggu,
+                            perlahan datang
+                            menghampiri kamu.
+
+                        </p>
+
+                        <p>
+
+                            Semoga senyum kamu
+                            selalu punya alasan
+                            untuk tetap ada.
+
+                        </p>
+
+                        <p class="birthday-line">
+
+                            Happy Birthday,
+                            Jesika. ❤️
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="signature">
+
+                        <span>
+                            sincerely,
+                        </span>
+
+                        <strong>
+                            seseorang yang peduli
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="center">
+
+                    <button
+                        id="toPhotos"
+                        class="main-button"
+                        type="button">
+
+                        <span>
+                            Lanjut
+                        </span>
+
+                        <b>
+                            →
+                        </b>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 5 — PHOTOS
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page5">
+
+            <div class="page-content">
+
+                <div class="center">
+
+                    <div class="chapter">
+                        CHAPTER 03
+                    </div>
+
+                    <h2 class="section-title">
+
+                        Little
+                        <em>Memories.</em>
+
+                    </h2>
+
+                    <p class="section-text">
+
+                        Beberapa foto mungkin cuma
+                        terlihat seperti gambar.
+
+                        Tapi buat aku,
+                        setiap foto punya cerita.
+
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURED PHOTO -->
+
+                <div
+                    id="photoViewer"
+                    class="photo-viewer">
+
+                    <img
+                        id="mainPhoto"
+                        src="images/foto1.jpg"
+                        alt="Memory">
+
+                    <div class="photo-gradient"></div>
+
+                    <div class="photo-info">
+
+    <div>
+
+        <span id="photoCounter">
+            01 / 06
+        </span>
+
+        <h3 id="photoTitle">
+            Awal dari sebuah cerita
+        </h3>
+
+        <p id="photoDescription">
+            Dari sekian banyak hal yang terjadi,
+            ada beberapa momen yang rasanya
+            pantas untuk disimpan lebih lama.
+        </p>
+
+    </div>
+
+    <button
+        id="zoomButton"
+        type="button">
+
+        ⛶
+
+    </button>
+
+</div>
+
+                </div>
+
+
+                <!-- THUMBNAILS -->
+
+                <div class="photo-grid">
+
+                    <button
+                        class="photo-thumb active"
+                        data-index="0"
+                        type="button">
+
+                        <img
+                            src="images/foto1.jpg"
+                            alt="Foto 1">
+
+                    </button>
+
+                    <button
+                        class="photo-thumb"
+                        data-index="1"
+                        type="button">
+
+                        <img
+                            src="images/foto2.jpg"
+                            alt="Foto 2">
+
+                    </button>
+
+                    <button
+                        class="photo-thumb"
+                        data-index="2"
+                        type="button">
+
+                        <img
+                            src="images/foto3.jpg"
+                            alt="Foto 3">
+
+                    </button>
+
+                    <button
+                        class="photo-thumb"
+                        data-index="3"
+                        type="button">
+
+                        <img
+                            src="images/foto4.jpg"
+                            alt="Foto 4">
+
+                    </button>
+
+                    <button
+                        class="photo-thumb"
+                        data-index="4"
+                        type="button">
+
+                        <img
+                            src="images/foto5.jpg"
+                            alt="Foto 5">
+
+                    </button>
+
+                    <button
+                        class="photo-thumb"
+                        data-index="5"
+                        type="button">
+
+                        <img
+                            src="images/foto6.jpg"
+                            alt="Foto 6">
+
+                    </button>
+
+                </div>
+
+
+                <div class="center">
+
+                    <button
+                        id="toReasons"
+                        class="text-button"
+                        type="button">
+
+                        Lanjut
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 6 — REASONS
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page6">
+
+            <div class="page-content">
+
+                <div class="center">
+
+                    <div class="chapter">
+                        CHAPTER 04
+                    </div>
+
+                    <h2 class="section-title">
+
+                        Why
+                        <em>you?</em>
+
+                    </h2>
+
+                    <p class="section-text">
+
+                        Mungkin aku nggak punya
+                        banyak alasan yang bisa
+                        dijelaskan dengan logika.
+
+                    </p>
+
+                </div>
+
+
+                <div class="reason-grid">
+
+                    <article class="reason-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div class="reason-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Senyum
+                        </h3>
+
+                        <p>
+                            Ada sesuatu dari senyum
+                            kamu yang bikin suasana
+                            terasa sedikit lebih baik.
+                        </p>
+
+                    </article>
+
+
+                    <article class="reason-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div class="reason-icon">
+                            ♡
+                        </div>
+
+                        <h3>
+                            Cara kamu
+                        </h3>
+
+                        <p>
+                            Cara kamu menjadi diri
+                            sendiri adalah salah
+                            satu hal yang bikin lu
+                            berbeda.
+                        </p>
+
+                    </article>
+
+
+                    <article class="reason-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div class="reason-icon">
+                            ∞
+                        </div>
+
+                        <h3>
+                            Kehadiran
+                        </h3>
+
+                        <p>
+                            Kadang seseorang nggak
+                            perlu melakukan apa-apa
+                            untuk bisa berarti.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="center">
+
+                    <button
+                        id="secretButton"
+                        class="secret-button"
+                        type="button">
+
+                        <span>
+                            Jangan klik ini.
+                        </span>
+
+                        <small>
+                            seriously...
+                        </small>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 7 — SURPRISE
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page7">
+
+            <div class="page-content center">
+
+                <div class="surprise-icon">
+                    🌹
+                </div>
+
+                <h2 class="section-title">
+
+                    One more
+                    <em>thing.</em>
+
+                </h2>
+
+                <p class="section-text">
+
+                    Kalau kamu udah sampai
+                    sejauh ini...
+
+                    berarti ada satu hal
+                    terakhir yang harus
+                    aku kasih.
+
+                </p>
+
+
+                <div class="secret-message">
+
+                    <span>
+                        ♥
+                    </span>
+
+                    <p>
+                        Semoga tahun ini
+                        membawa lebih banyak
+                        alasan untuk tersenyum.
+                    </p>
+
+                    <span>
+                        ♥
+                    </span>
+
+                </div>
+
+
+                <button
+                    id="birthdayButton"
+                    class="main-button big-button"
+                    type="button">
+
+                    <span>
+                        Buka Surprise
+                    </span>
+
+                    <b>
+                        ✦
+                    </b>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PAGE 8 — FINAL
+        ================================================== -->
+
+        <section
+            class="page"
+            id="page8">
+
+            <div class="page-content center">
+
+                <div class="crown">
+                    ♕
+                </div>
+
+                <div class="final-small">
+                    TODAY IS YOUR DAY
+                </div>
+
+                <h2 class="birthday-title">
+
+                    Happy
+
+                    <span>
+                        Birthday
+                    </span>
+
+                </h2>
+
+                <h3>
+                    Jesika
+                </h3>
+
+
+                <p class="birthday-wish">
+
+                    Semoga semua doa yang
+                    baik menemukan jalannya
+                    menuju kamu.
+
+                    <br><br>
+
+                    Semoga langkah kamu selalu
+                    ditemani hal-hal yang
+                    membuat lu bahagia.
+
+                </p>
+
+
+                <div class="divider">
+                    ♥
+                </div>
+
+
+                <p class="final-message">
+
+                    Terima kasih sudah menjadi
+                    bagian dari cerita ini.
+
+                </p>
+
+
+                <button
+                    id="restartButton"
+                    class="restart-button"
+                    type="button">
+
+                    ↻ ulangi dari awal
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         LIGHTBOX FOTO
+    =================================================== -->
+
+    <div
+        id="lightbox"
+        class="lightbox">
+
+        <button
+            id="closeLightbox"
+            class="close-lightbox"
+            type="button">
+
+            ×
+
+        </button>
+
+
+        <button
+            id="prevPhoto"
+            class="photo-nav prev"
+            type="button">
+
+            ‹
+
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="">
+
+            <div class="lightbox-caption">
+
+    <span id="lightboxCounter">
+        01 / 06
+    </span>
+
+    <h3 id="lightboxTitle">
+        Awal dari sebuah cerita
+    </h3>
+
+    <p id="lightboxDescription">
+        Dari sekian banyak hal yang terjadi,
+        ada beberapa momen yang rasanya
+        pantas untuk disimpan lebih lama.
+    </p>
+
+</div>
+
+        </div>
+
+
+        <button
+            id="nextPhoto"
+            class="photo-nav next"
+            type="button">
+
+            ›
+
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
