@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "Senyum yang sederhana",
 
         description:
-            "Mungkin buat lu ini cuma senyum biasa. Tapi entah kenapa, ada sesuatu yang selalu terasa berbeda ketika melihatnya."
+            "Mungkin buat kamu ini cuma senyum biasa. Tapi entah kenapa, ada sesuatu yang selalu terasa berbeda ketika melihatnya."
     },
 
     {
